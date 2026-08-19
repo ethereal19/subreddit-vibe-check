@@ -4,12 +4,6 @@ A full-stack dashboard that reads the current Hot posts from a subreddit, analyz
 
 ![Architecture](https://img.shields.io/badge/architecture-React_%E2%86%92_Express_%E2%86%92_Reddit-ff4500)
 
-## Reddit API setup note
-
-Reddit may temporarily limit new email signups, including disposable email addresses. The screenshot below records the signup-limit response encountered during API account setup.
-
-![Reddit email signup limit](docs/reddit-signup-limit.png)
-
 ## What it does
 
 - Fetches up to 50 Hot posts for a supplied subreddit.
