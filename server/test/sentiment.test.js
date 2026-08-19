@@ -23,6 +23,6 @@ test('accepts subreddit prefixes and rejects invalid names', () => {
   assert.equal(normalizeSubreddit('webdev'), 'webdev');
   assert.equal(normalizeSubreddit('news'), 'news');
   assert.equal(normalizeSubreddit('gaming'), 'gaming');
+  assert.equal(normalizeSubreddit('python'), 'python');
   assert.throws(() => normalizeSubreddit('a!'), { code: 'INVALID_SUBREDDIT' });
-  assert.throws(() => normalizeSubreddit('python'), { code: 'UNSUPPORTED_SUBREDDIT' });
 });

@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: subreddit-vibe-check-api
+    name: subreddit-vibe-check
     runtime: node
-    rootDir: server
-    buildCommand: npm install
+    rootDir: .
+    buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_VERSION

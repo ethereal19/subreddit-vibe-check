@@ -5,15 +5,6 @@ const { ApiError } = require('./errors');
 const USER_AGENT = process.env.REDDIT_USER_AGENT || 'web:subreddit-vibe-check:1.0.0 (contact: local-development)';
 // Browser-like UA for public RSS requests to avoid rate limiting
 const BROWSER_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
-const SUPPORTED_SUBREDDITS = new Set([
-  'technology',
-  'reactjs',
-  'programming',
-  'javascript',
-  'webdev',
-  'news',
-  'gaming',
-]);
 let tokenCache = { value: null, expiresAt: 0 };
 
 // Simple in-memory cache: subreddit -> { data, expiresAt }
@@ -35,9 +26,6 @@ function normalizeSubreddit(value) {
 
   if (!/^[A-Za-z0-9_]{3,21}$/.test(clean)) {
     throw new ApiError(400, 'INVALID_SUBREDDIT', 'Enter a valid subreddit name (3–21 letters, numbers, or underscores).');
-  }
-  if (!SUPPORTED_SUBREDDITS.has(clean.toLowerCase())) {
-    throw new ApiError(400, 'UNSUPPORTED_SUBREDDIT', 'Only technology, reactjs, and programming are supported.');
   }
   return clean;
 }

@@ -91,6 +91,12 @@ Returns normalized subreddit data, summary statistics, and analyzed posts.
 
 ## Deploy
 
+### Live deployment
+
+- **Frontend:** https://subreddit-vibe-check-od8430cg0-polus-projects-14ff281d.vercel.app/
+- **API:** https://subreddit-vibe-check-1-hlnj.onrender.com/
+- **API health check:** https://subreddit-vibe-check-1-hlnj.onrender.com/api/health
+
 ### Render (API)
 
 Create a Web Service with root directory `server`, build command `npm install`, and start command `npm start`. Add the Reddit and `CLIENT_ORIGIN` variables from the table above.
