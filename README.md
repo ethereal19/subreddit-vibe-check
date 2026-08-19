@@ -18,6 +18,10 @@ Reddit may temporarily limit new email signups, including disposable email addre
 - Shows a responsive donut chart, summary cards, and links back to Reddit.
 - Handles empty input, missing subreddits, rate limits, network errors, no-post results, and loading states.
 
+## Author
+
+Reddit: [u/After-Yellow4789](https://www.reddit.com/user/After-Yellow4789/)
+
 ## Stack
 
 - **Client:** React, Vite, Axios, CSS-native donut visualization
