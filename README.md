@@ -12,6 +12,16 @@ A full-stack dashboard that reads the current Hot posts from a subreddit, analyz
 - Shows a responsive donut chart, summary cards, and links back to Reddit.
 - Handles empty input, missing subreddits, rate limits, network errors, no-post results, and loading states.
 
+## Subreddits you can search
+
+You can search any public subreddit with a valid name containing 3–21 letters, numbers, or underscores. Enter the name in any of these formats:
+
+- `technology`
+- `r/technology`
+- `https://www.reddit.com/r/technology/`
+
+For example, try `technology`, `programming`, `reactjs`, `news`, `gaming`, or any other public subreddit.
+
 ## Author
 
 Reddit: [u/After-Yellow4789](https://www.reddit.com/user/After-Yellow4789/)
